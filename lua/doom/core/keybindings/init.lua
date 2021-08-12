@@ -16,6 +16,7 @@ local opts = { silent = true }
 
 utils.map('n', '<Space>', '<Nop>', opts)
 vim.g.mapleader = ' '
+vim.g.maplocalleader = ','
 
 -- Map WhichKey popup menu
 -- utils.map('n', '<Space>', ':WhichKey <leader><CR>', opts)
@@ -155,8 +156,8 @@ utils.map('i', 'jk', '<ESC>', opts)
 ---[[-----------------]]---
 --    Select Movement    --
 ---]]-----------------[[---
-utils.map('x', 'K', ":move '<-2<CR>gv-gv", opts)
-utils.map('x', 'J', ":move '>+1<CR>gv-gv", opts)
+-- utils.map('x', 'K', ":move '<-2<CR>gv-gv", opts)
+-- utils.map('x', 'J', ":move '>+1<CR>gv-gv", opts)
 
 -- get out of terminal insert mode into normal mode with Esc
 vim.cmd('tnoremap <Esc> <C-\\><C-n>')
@@ -338,11 +339,11 @@ utils.map(
 )
 
 -- toggle
-utils.map('n', '<leader>od', '<cmd>Dashboard<CR>', opts)
-utils.map('n', '<leader>oe', '<cmd>NvimTreeToggle<CR>', opts)
-utils.map('n', '<leader>om', '<cmd>MinimapToggle<CR>', opts)
-utils.map('n', '<leader>os', '<cmd>SymbolsOutline<CR>', opts)
-utils.map('n', '<leader>ot', '<cmd>ToggleTerm<CR>', opts)
+utils.map('n', '<leader>td', '<cmd>Dashboard<CR>', opts)
+utils.map('n', '<leader>te', '<cmd>NvimTreeToggle<CR>', opts)
+utils.map('n', '<leader>tm', '<cmd>MinimapToggle<CR>', opts)
+utils.map('n', '<leader>ts', '<cmd>SymbolsOutline<CR>', opts)
+utils.map('n', '<leader>tt', '<cmd>ToggleTerm<CR>', opts)
 
 -- git
 utils.map('n', '<leader>go', '<cmd>LazyGit<CR>', opts)

@@ -16,10 +16,10 @@ local doom = {
 		'dashboard',      -- Start screen
 		-- 'doom-themes', -- Additional doom emacs' colorschemes
 		'statusline',     -- Statusline
-		'tabline',        -- Tabline, shows your buffers list at top
+		-- 'tabline',        -- Tabline, shows your buffers list at top
 		-- 'zen',         -- Distraction free environment
 		'which-key',      -- Keybindings popup menu like Emacs' guide-key
-		-- 'indentlines', -- Show indent lines
+		'indentlines', -- Show indent lines
 	},
 	doom = {
 		-- 'neorg',    -- Life Organization Tool
@@ -55,10 +55,10 @@ local doom = {
 		-- 'python +lsp', -- Python support + lsp
 		-- 'ruby',        -- Look ma, I love the gems!
 		'lua',            -- Support for our gods language
-		-- 'elixir',      -- Build scalable and maintainable software
+		'elixir +lsp',      -- Build scalable and maintainable software
 		-- 'haskell',     -- Because Functional programming is fun, isn't it?
 
-		-- 'rust +lsp',   -- Let's get rusty!
+		'rust +lsp',   -- Let's get rusty!
 		-- 'go',          -- Hello, gopher
 		-- 'cpp',         -- C++ support
 		-- 'java',        -- Java support
@@ -69,7 +69,7 @@ local doom = {
 	utilities = {
 		-- 'suda',            -- Write and read files without sudo permissions
 		-- 'lazygit',         -- LazyGit integration for Neovim, requires LazyGit
-		-- 'neogit',          -- Magit for Neovim
+		'neogit',          -- Magit for Neovim
 		-- 'colorizer',       -- Fastets colorizer for Neovim
 		'range-highlight',    -- hightlights ranges you have entered in commandline
 	},

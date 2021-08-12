@@ -63,7 +63,7 @@ local doom = {
 	-- false : disables show mode
 	-- true  : enables show mode
 	-- @default = false
-	show_mode = false,
+	show_mode = true,
 
 	-- Enable scroll off
 	-- false : disables scroll off
@@ -135,7 +135,7 @@ local doom = {
 	-- false : Shows absolute number lines
 	-- true  : Shows relative number lines
 	-- @default = true
-	relative_num = true,
+	relative_num = false,
 
 	-- Enable Highlight on yank
 	-- false : disables highligh on yank
@@ -174,7 +174,7 @@ local doom = {
 
 	-- Default indent size
 	-- @default = 4
-	indent = 4,
+	indent = 2,
 
 	-- Set max cols
 	-- Defines the column to show a vertical marker
@@ -244,7 +244,7 @@ local doom = {
 
 	-- Default colorscheme
 	-- @default = doom-one
-	colorscheme = 'doom-one',
+	colorscheme = 'material',
 
 	-- Background color
 	-- @default = dark
@@ -312,7 +312,11 @@ local nvim = {
 	-- @default = {}
 	-- example:
 	--   { ['sonokai_style'] = 'andromeda' }
-	global_variables = {},
+	global_variables = {
+	  ['material_style'] = 'lighter',
+	  ['material_italic_comment'] = true,
+	  ['material_lighter_contrast'] = true,
+	},
 
 	-- Set custom autocommands
 	-- @default = {}
@@ -333,7 +337,10 @@ local nvim = {
 	--     'n' is the map scope
 	--     'ca' is the map activator
 	--     ':Lspsaga ...' is the command to be executed
-	mappings = {},
+	mappings = {
+	  {'n', 's', ':HopChar2<CR>'},
+	  {'n', 'S', ':HopChar2BC<CR>'},
+	},
 
 	-- Set custom commands
 	-- @default = {}
